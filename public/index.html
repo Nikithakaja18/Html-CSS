@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f7f2">
+  <title>Skillora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Skillora home">
+        <span class="brand-mark">S</span>
+        <span>Skillora <strong>Assessments</strong></span>
+      </a>
+      <div class="topbar-meta">
+        <span class="status-dot"></span>
+        <span>Session ready</span>
+        <span class="avatar">JD</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="landing-view" class="view landing-view">
+        <div class="hero-copy">
+          <p class="eyebrow">Skillora / Subject library</p>
+          <h1>Choose your<br><em>subject.</em></h1>
+          <p class="hero-description">Choose a subject to start its assessment. Your score and answer review appear when you submit.</p>
+          <div class="subject-picker">
+            <p class="subject-picker-label">AVAILABLE SUBJECTS</p>
+            <div id="subject-grid" class="subject-grid" aria-label="Available subjects"></div>
+            <p id="subject-error" class="subject-error hidden" role="alert"></p>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <div class="score-orbit"><span>10</span><small>MINUTES</small></div>
+          <div class="hero-stat-list">
+            <div><strong>07</strong><span>Subjects</span></div>
+            <div><strong>05</strong><span>Questions each</span></div>
+            <div><strong>70%</strong><span>Pass mark</span></div>
+            <div><strong>04</strong><span>Options each</span></div>
+          </div>
+        </div>
+        <div class="landing-footer"><span>SUBJECT LIBRARY</span><span>SKILLORA ASSESSMENTS</span></div>
+      </section>
+
+      <section id="exam-view" class="view exam-view hidden">
+        <div class="exam-heading">
+          <div>
+            <p id="exam-eyebrow" class="eyebrow">Assessment</p>
+            <h2 id="exam-title">Assessment</h2>
+          </div>
+          <div class="timer-wrap"><span class="timer-label">TIME REMAINING</span><span id="timer" class="timer">15:00</span></div>
+        </div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <div class="exam-layout">
+          <aside class="question-sidebar">
+            <div class="sidebar-title"><span>QUESTION MAP</span><span id="answered-count">0 / 8</span></div>
+            <div id="question-map" class="question-map"></div>
+            <div class="legend"><span><i class="legend-current"></i>Current</span><span><i class="legend-done"></i>Answered</span></div>
+          </aside>
+          <article class="question-panel">
+            <div class="question-meta"><span id="question-topic">JAVASCRIPT</span><span id="question-difficulty">INTERMEDIATE</span></div>
+            <div class="question-number"><span id="question-number">01</span></div>
+            <h3 id="question-text"></h3>
+            <div id="answer-list" class="answer-list"></div>
+            <div class="question-actions"><button id="back-button" class="button button-quiet">&#8592; Back</button><button id="next-button" class="button button-primary">Next question <span aria-hidden="true">&#8594;</span></button></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="result-view" class="view result-view hidden">
+        <div class="result-header"><p class="eyebrow">Assessment complete / FS-101</p><h2>Your result is in.</h2><p id="result-message" class="result-message"></p></div>
+        <div class="result-layout">
+          <div class="result-score"><div class="score-ring"><strong id="result-percentage">0%</strong><span>OVERALL</span></div><div class="score-caption"><span id="result-status" class="result-status">PASSED</span><p>Based on your answers in this subject.</p></div></div>
+          <div class="result-stats"><div><span>Correct answers</span><strong id="correct-stat">0 / 8</strong></div><div><span>Questions answered</span><strong id="answered-stat">0 / 8</strong></div><div><span>Final score</span><strong id="score-stat">0 points</strong></div></div>
+        </div>
+        <div class="review-heading"><div><p class="eyebrow">Review / 01</p><h3>Answer breakdown</h3></div><button id="restart-button" class="button button-outline">Retake assessment</button></div>
+        <div id="review-list" class="review-list"></div>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

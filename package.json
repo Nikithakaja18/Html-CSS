@@ -1,0 +1,15 @@
+{
+  "name": "Skillora",
+  "version": "1.0.0",
+  "description": "A focused online examination system built with Express and Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["express", "node", "examination", "quiz"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
