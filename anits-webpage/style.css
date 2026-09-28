@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP BAR */
+.top-bar {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.top-bar p {
+    margin: 0 25px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 30px;
+    background-color: white;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-section img {
+    width: 60px;
+}
+
+.college-name {
+    color: rgb(250, 94, 32);
+    font-size: 20px;
+}
+
+.college-name span {
+    font-size: 12px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section img {
+    width: 60px;
+}
+
+.right-section button {
+    background-color: rgb(41, 110, 167);
+    border-radius: 8px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+.navbar {
+    background-color: #083263;
+    height: 50px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar li {
+    color: white;
+    
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.navbar li:hover {
+    background-color: #0a4b94;
+}
+
+.notice {
+    background-color: white;
+    color: #0B3D91;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.banner img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin: 40px auto;
+}
+
+.video-box {
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+.video-box iframe {
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 0px;
+}
+
+.welcome-text {
+    width: 550px;
+}
+
+.welcome-text h2 {
+    font-size: 48px;
+    color: #1b2b4b;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 220px;
+    height: 5px;
+    background-color: #27b8e7;
+    margin-bottom: 25px;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #444;
+    text-align: justify;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.glance {
+    text-align: center;
+    padding: 40px;
+}
+
+.glance h2 {
+    font-size: 48px;
+    color: #1b2b4b;
+}
+
+.glance .line {
+    margin: 10px auto 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.card {
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+}
+
+.yellow,
+.orange {
+    background: #ffc107;
+}
+
+.green,
+.lightgreen {
+    background: #78C000;
+}
+
+.pink,
+.lightpink {
+    background: #FF6F61;
+}
